@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Buffet - Bookmytable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <h1 class="logo">
+                            <span class="logo-book">Book</span><span class="logo-mytable">mytable</span>
+                        </h1>
+                        <p class="tagline">Never wait for your meal</p>
+                    </a>
+                </div>
+                <div class="search-section">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <div class="user-section">
+                    <i class="fas fa-bell icon-btn"></i>
+                    <i class="fas fa-heart icon-btn"></i>
+                    <i class="fas fa-shopping-cart icon-btn"></i>
+                    <div class="profile-pic">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Restaurant Detail Section -->
+    <section class="restaurant-detail-section">
+        <div class="container">
+            <div class="restaurant-main-content">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop" alt="Grant Buffet">
+                </div>
+                <div class="restaurant-summary">
+                    <div class="summary-header">
+                        <h2 class="restaurant-name">Grant Buffet</h2>
+                        <i class="fas fa-heart summary-heart"></i>
+                    </div>
+                    <p class="restaurant-location">Upper Ground Floor, East court, Phoenix Market City, Viman nagar, Chennai..</p>
+                    <hr class="summary-divider">
+                    <p class="restaurant-cuisine"><strong>Cuisine:</strong> North Indian, Mohall, Italian, BBQ</p>
+                    <p class="restaurant-cost"><strong>Cost:</strong> Cost for two: Rs.1000</p>
+                    <div class="restaurant-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="restaurant-tabs">
+                <button class="tab-btn active" onclick="showTab('overview', this)">Overview Restaurent</button>
+                <button class="tab-btn" onclick="showTab('menu', this)">Menu Card</button>
+            </div>
+
+            <!-- Overview Content -->
+            <div id="overview-tab" class="tab-content active">
+                <div class="overview-container">
+                    <div class="overview-left">
+                        <h3 class="overview-title">Grant Buffet Overview</h3>
+                        <div class="overview-info">
+                            <p><strong>Phone Number:</strong> 39883983923</p>
+                            <p><strong>Cuisines:</strong> North Indian, Mohall, Italian, BBQ</p>
+                            <p><strong>Average Cost:</strong> ₹ 1000 for two peoples (approx.)</p>
+                            <p><strong>Famous for:</strong> Decor, Live Music, Live Grill, Mutton, Roganjosh, Naan, Dahi Vada, Salads, Kulfi, Chikken Tikka.</p>
+                        </div>
+                    </div>
+                    <div class="overview-right">
+                        <div class="overview-info">
+                            <p><strong>Opening hours:</strong> 12noon - 3pm, 7pm - 11pm</p>
+                            <p><strong>Address:</strong> Upper Ground Floor, East Court, Phoenix, Market City, Viman nagar, Chennai - 623088</p>
+                        </div>
+                        <div class="restaurant-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497512.09579373736!2d79.92846991250003!3d13.0474878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1234567890" 
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="map-contact">
+                            <p>(123) 8940-985498</p>
+                            <p>info@Bookmytable.com</p>
+                            <p>Chennai 54375387</p>
+                        </div>
+                        <a href="reservation.html" class="reserve-now-btn">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Card Content (Hidden by default) -->
+            <div id="menu-tab" class="tab-content">
+                <div class="menu-container">
+                    <h2 class="menu-title">Our Menu Card</h2>
+                    <div class="menu-category-tabs">
+                        <button class="category-tab" onclick="showCategory('starters', this)">Starters</button>
+                        <button class="category-tab" onclick="showCategory('main-course', this)">Main course</button>
+                        <button class="category-tab active" onclick="showCategory('desserts', this)">Desserts</button>
+                        <button class="category-tab" onclick="showCategory('beverages', this)">Beverages</button>
+                    </div>
+                    
+                    <!-- Desserts Category -->
+                    <div id="desserts-category" class="category-content active">
+                        <div class="menu-items-grid">
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop" alt="Panno Catto">
+                                    <i class="fas fa-heart menu-item-heart"></i>
+                                </div>
+                                <h4 class="menu-item-name">Panno Catto</h4>
+                                <p class="menu-item-price">₹ 240</p>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=300&fit=crop" alt="Brownie Ice">
+                                    <i class="fas fa-heart menu-item-heart"></i>
+                                </div>
+                                <h4 class="menu-item-name">Brownie Ice</h4>
+                                <p class="menu-item-price">₹ 280</p>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=400&h=300&fit=crop" alt="Chesse Cake">
+                                    <i class="fas fa-heart menu-item-heart"></i>
+                                </div>
+                                <h4 class="menu-item-name">Chesse Cake</h4>
+                                <p class="menu-item-price">₹ 280</p>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="https://images.unsplash.com/photo-1621293954908-907159247fc8?w=400&h=300&fit=crop" alt="Apple Pie">
+                                    <i class="fas fa-heart menu-item-heart"></i>
+                                </div>
+                                <h4 class="menu-item-name">Apple Pie</h4>
+                                <p class="menu-item-price">₹ 240</p>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=300&fit=crop" alt="Gulab Jamun">
+                                    <i class="fas fa-heart menu-item-heart"></i>
+                                </div>
+                                <h4 class="menu-item-name">Gulab Jamun</h4>
+                                <p class="menu-item-price">₹ 240</p>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Creme Bruele">
+                                    <i class="fas fa-heart menu-item-heart"></i>
+                                </div>
+                                <h4 class="menu-item-name">Creme Bruele</h4>
+                                <p class="menu-item-price">₹ 240</p>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Other categories (hidden by default) -->
+                    <div id="starters-category" class="category-content">
+                        <div class="menu-items-grid">
+                            <p>Starters items will be displayed here.</p>
+                        </div>
+                    </div>
+                    <div id="main-course-category" class="category-content">
+                        <div class="menu-items-grid">
+                            <p>Main course items will be displayed here.</p>
+                        </div>
+                    </div>
+                    <div id="beverages-category" class="category-content">
+                        <div class="menu-items-grid">
+                            <p>Beverages items will be displayed here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-upper">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Customer Reviews</a></li>
+                        <li><a href="#">Add Your Restaurent</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Policy Info</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Cities</h4>
+                    <ul>
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Banglore</a></li>
+                        <li><a href="#">Hyderabad</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Booking Status</a></li>
+                        <li><a href="#">Add Restaurent</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-restaurants">
+                <ul>
+                    <li><a href="#">Restaurent in Chennal</a></li>
+                    <li><a href="#">Restaurent in Pune</a></li>
+                    <li><a href="#">Restaurent in Bangalore</a></li>
+                    <li><a href="#">Restaurent in Kolkata</a></li>
+                    <li><a href="#">Restaurent in Hyderabad</a></li>
+                    <li><a href="#">Restaurent in Mumbai</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="container">
+                <div class="footer-lower-content">
+                    <p class="copyright">© 2025 Book My Table.Co.in. All rights reserved.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> (123) 8940-985498</p>
+                        <p><i class="fas fa-envelope"></i> Info@Bookmytable.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Chennai 54375387</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showTab(tabName, button) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName + '-tab').classList.add('active');
+            
+            // Add active class to clicked button
+            button.classList.add('active');
+        }
+
+        function showCategory(categoryName, button) {
+            // Hide all category contents
+            document.querySelectorAll('.category-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all category tab buttons
+            document.querySelectorAll('.category-tab').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected category content
+            document.getElementById(categoryName + '-category').classList.add('active');
+            
+            // Add active class to clicked button
+            button.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+

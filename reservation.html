@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Bookmytable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservation.html" class="active">Reservation</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="index.html" style="text-decoration: none;">
+                        <h1 class="logo">
+                            <span class="logo-book">Book</span><span class="logo-mytable">mytable</span>
+                        </h1>
+                        <p class="tagline">Never wait for your meal</p>
+                    </a>
+                </div>
+                <div class="search-section">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <div class="user-section">
+                    <i class="fas fa-bell icon-btn"></i>
+                    <i class="fas fa-heart icon-btn"></i>
+                    <i class="fas fa-comment icon-btn"></i>
+                    <div class="profile-pic">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Reservation Hero Section -->
+    <section class="reservation-hero">
+        <div class="reservation-hero-background"></div>
+        <div class="reservation-hero-content">
+            <h2>Make a Reservation</h2>
+            <p>Book your table and enjoy a perfect dining experience</p>
+        </div>
+    </section>
+
+    <!-- Reservation Form Section -->
+    <section class="reservation-form-section">
+        <div class="container">
+            <div class="reservation-wrapper">
+                <div class="reservation-form-container">
+                    <h3 class="form-title">Reservation Details</h3>
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="restaurant">Select Restaurant</label>
+                                <select id="restaurant" name="restaurant" required>
+                                    <option value="">Choose a restaurant</option>
+                                    <option value="grant-buffet">Grant Buffet - Viman nagar</option>
+                                    <option value="spice-chicken">Spice Chicken</option>
+                                    <option value="cigreee">Cigreee</option>
+                                    <option value="taste-of-punjab">Taste of Punjab</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7+ Guests</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Select Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Select Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="14:30">2:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                    <option value="21:30">9:30 PM</option>
+                                    <option value="22:00">10:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests (Optional)</label>
+                            <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requests or dietary requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" required>
+                                <span>I agree to the Terms & Conditions and Privacy Policy</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirm Reservation
+                        </button>
+                    </form>
+                </div>
+
+                <div class="reservation-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Operating Hours</h4>
+                        <p>Monday - Sunday</p>
+                        <p>11:00 AM - 10:00 PM</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Contact Us</h4>
+                        <p>(123) 8940-985498</p>
+                        <p>Info@Bookmytable.com</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h4>Reservation Policy</h4>
+                        <p>Reservations are held for 15 minutes past the reservation time. Please arrive on time to ensure your table is available.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Cancellation</h4>
+                        <p>Free cancellation up to 2 hours before your reservation time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-upper">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Customer Reviews</a></li>
+                        <li><a href="#">Add your restaurant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Policy Info</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Cities</h4>
+                    <ul>
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Bangalore</a></li>
+                        <li><a href="#">Hyderabad</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Booking Status</a></li>
+                        <li><a href="#">Add restaurant</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-restaurants">
+                <ul>
+                    <li><a href="#">Restaurant in Chennai</a></li>
+                    <li><a href="#">Restaurant in Bangalore</a></li>
+                    <li><a href="#">Restaurant in Hyderabad</a></li>
+                    <li><a href="#">Restaurant in Pune</a></li>
+                    <li><a href="#">Restaurant in Kolkata</a></li>
+                    <li><a href="#">Restaurant in Mumbai</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="container">
+                <div class="footer-lower-content">
+                    <p class="copyright">© 2025 Book My Table.Co.in. All rights reserved.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> (123) 8940-985498</p>
+                        <p><i class="fas fa-envelope"></i> Info@Bookmytable.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Chennai 54375387</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="reservation.js"></script>
+</body>
+</html>
+
+
